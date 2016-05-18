@@ -14,7 +14,7 @@ var monthsChart = c3.generate({
          black: '#9b0b45',
          total: '#444444'
        },
-       url: '/data/count_over_time.csv'
+       url: 'data/count_over_time.csv'
    },
    axis: {
        x: {
@@ -49,7 +49,7 @@ var monthsChart = c3.generate({
 var ratesChart = c3.generate({
     bindto: '#ratesChart',
     data: {
-        url: '/data/rate_by_race.csv',
+        url: 'data/rate_by_race.csv',
         type: 'bar',
         x: 'race',
         y: 'rate1mil',
@@ -89,7 +89,7 @@ var ratesChart = c3.generate({
 var armedChart = c3.generate({
    bindto: '#armedChart',
    data: {
-       url: '/data/armed.csv',
+       url: 'data/armed.csv',
        type: 'bar',
        groups: [['unarmed', 'armedUnknown']],
        x: 'race',
@@ -128,7 +128,7 @@ var armedChart = c3.generate({
 var citiesChart = c3.generate({
   bindto: '#citiesChart',
   data: {
-    url: '/data/city_rate.csv',
+    url: 'data/city_rate.csv',
     type: 'bar',
     x: 'city',
     y: 'rate1mil',
@@ -270,7 +270,7 @@ function charges() {
 function map() {
     var dataset = {};
 
-    d3.csv('/data/state_rate.csv', function(data) {
+    d3.csv('data/state_rate.csv', function(data) {
   
 
       var onlyVals = data.map(function(d) {
