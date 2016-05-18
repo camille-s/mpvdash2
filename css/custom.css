@@ -1,0 +1,15 @@
+.c3-line {
+    stroke-width: 2px;
+}
+
+
+.legend {
+  font-family: sans-serif;
+  font-size: x-small;
+}
+
+.tool-extra {
+  z-index: 10;
+  padding: 4px 5px;
+  border: 1px solid #ccc;
+}
