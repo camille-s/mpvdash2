@@ -264,6 +264,15 @@ function charges() {
             .text(function(d) {
                 return d.name;
             });
+         d3.select('#badge')
+            .append('svg')
+            .attr('width', 20)
+            .attr('height', 20)
+            .append('g')
+            .append('use')
+            .attr('xlink:href', '#iconCustom')
+            .attr('transform', 'translate(0, 5)')
+            .style('fill', range[0]);
     });
 }
 
